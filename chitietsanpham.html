@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./src/assets/css/chitietsanpham.css">
+    <link rel="stylesheet" href="./src/assets/css/main.css">
+    <title>Chi tiết sản phẩm</title>
+</head>
+
+<body>
+      <!-- Phần header -->
+    <div id="header">
+        <!-- Phần header top -->
+        <div class="header_top">
+            <div class="wrapper">
+                <div class="header_top-main">
+                    <div class="header_top-left">
+                        <div class="header_top-left-icon">
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="header_top-center">
+                        <i class="fa fa-rss"></i>
+                        <marquee behavior="" direction="">
+                            Chào mừng bạn đến với NXB KIM ĐỒNG.Nếu bạn cần giúp đỡ hãy liên hệ với chúng tôi qua 
+                            hotline (+84)1900571595 hoặc email cskh_online@nxbkimdong.com.vn
+                        </marquee>
+                    </div>
+                    <div class="header_top-right">
+                        <div class="header_top-right-icon">
+                            <a href=""><i class="fa-solid fa-phone"></i></a>
+                        </div>
+                        <a href="" class="phone">(+84)1900571595</a>
+                        <div class="header_top-right-icon">
+                            <a href=""><i class="fa-solid fa-envelope"></i></i></a>
+                        </div>
+                        <a href="" class="mail">cskh_online@nxbkimdong.com.vn</a>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <!-- Hết Phần header top -->
+        <!-- Phần header giữa có input tìm kiếm, đăng ký đăng nhập và giỏ hàng -->
+        <div class="header_middle">
+            <div class="wrapper">
+                <div class="header_middle-main">
+                    <div class="search">
+                        <input type="text" class="search-input" placeholder="Tìm kiếm ...">
+                        <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="logo">
+                        <a href=""><img src="./src/assets/img/logo.webp" alt=""></a>
+                    </div>
+                    <!-- Phần đăng ký đăng nhập -->
+                    <div class="header_middle-right">
+                        <div class="signin">
+                            <div class="signin-icon"><i class="fa fa-sign-in"></i></div>
+                            <div class="signin-text">Đăng nhập</div>
+                        </div>
+                        <div class="register">
+                            <div class="register-icon"><i class="fa-regular fa-pen-to-square"></i></div>
+                            <div class="register-text">Đăng ký</div>
+                        </div>
+                        <a href="" class="icon-like">
+                            <i class="fa-regular fa-heart"></i>
+                            <div class="quantity">0</div>
+                        </a>
+                        <div class="cart_icon">
+                            <a href="#" class="icon-cart">
+                                <i class="fa fa-shopping-bag"></i>
+                                <div class="quantity">0</div>
+                            </a>
+                            <!-- Phần giỏ hàng -->
+                            <div class="view_cart">
+                                    <h3 class="view_cart-title">Giỏ hàng của tôi (3 sản phẩm) <span id="view_cart-close"><i class="fa-solid fa-xmark" ></i></span> </h3>
+                                    <ul class="view_cart-list">
+                                        <li class="view_cart-item">
+                                            <div class="view_cart-item-img"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                                            <div class="view_cart-item-content">
+                                                <div class="view_cart-item-name"><a href="">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (Tặng kèm bọc bảo vệ sách)</a></div>
+                                                <div class="view_cart-item-quantity">Số lượng: 1</div>
+                                                <div class="view_cart-item-price">Giá/sp: 39,000đ</div>
+                                            </div>
+                                            <div class="view_cart-item-icon"><i class="fa-solid fa-xmark"></i></div>
+                                        </li>
+                                        <li class="view_cart-item">
+                                            <div class="view_cart-item-img"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                                            <div class="view_cart-item-content">
+                                                <div class="view_cart-item-name"><a href="">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (Tặng kèm bọc bảo vệ sách)</a></div>
+                                                <div class="view_cart-item-quantity">Số lượng: 1</div>
+                                                <div class="view_cart-item-price">Giá/sp: 39,000đ</div>
+                                            </div>
+                                            <div class="view_cart-item-icon"><i class="fa-solid fa-xmark"></i></div>
+                                        </li>
+                                        <li class="view_cart-item">
+                                            <div class="view_cart-item-img"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                                            <div class="view_cart-item-content">
+                                                <div class="view_cart-item-name"><a href="">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (Tặng kèm bọc bảo vệ sách)</a></div>
+                                                <div class="view_cart-item-quantity">Số lượng: 1</div>
+                                                <div class="view_cart-item-price">Giá/sp: 39,000đ</div>
+                                            </div>
+                                            <div class="view_cart-item-icon"><i class="fa-solid fa-xmark"></i></div>
+                                        </li>
+                                    </ul>
+                                    <div class="view_cart-total">Tạm tính:<span> 39,000đ</span></div>
+                                    <div class="view_cart-footer">
+                                        <button class="see_cart">Xem giỏ hàng</button>
+                                        <button class="pay">Thanh toán</button>
+                                    </div>
+                                </div>   
+                        </div>
+                       
+                    </div>
+                </div>
+                
+            </div>
+        <!-- Hết Phần header giữa -->
+         <!--  Phần header dưới có banner -->               
+        </div>
+        <div class="header_bottom">
+            <div class="banner">
+                    <div class="wrapper">
+                        <!-- Menu để lọc -->
+                        <ul class="menu">
+                            <li class="category">
+                                <div class="category-title">
+                                    <div class="category-icon"><i class="fa fa-bars"></i></div>
+                                    <div class="category-text">Danh mục sản phẩm</div>
+                                </div>                            
+                            </li>
+                            <div class="category_menu">
+                                <ul class="category_list">
+                                    <li class="category_item">
+                                        <a href="">Tất cả sản phẩm</a>
+                                    </li>
+                                    <li class="category_item">
+                                        <a href="">
+                                            <div class="category_item-icon"><i class="fa-solid fa-book-open"></i></div>
+                                            <div class="category_item-text">Lịch sử , Truyền thống</div>
+                                        </a>
+                                    </li>
+                                    <li class="category_item">
+                                        <a href="">
+                                            <div class="category_item-icon"><i class="fa-solid fa-book-open"></i></div>
+                                            <div class="category_item-text">Văn học Việt Nam</div>
+                                        </a>
+                                    </li>
+                                    <li class="category_item">
+                                        <a href="">
+                                            <div class="category_item-icon"><i class="fa-solid fa-book-open"></i></div>
+                                            <div class="category_item-text">Văn học nước ngoài</div>
+                                        </a>
+                                    </li>
+                                    <li class="category_item">
+                                        <a href="">
+                                            <div class="category_item-icon"><i class="fa-solid fa-book-open"></i></div>
+                                            <div class="category_item-text">Kiến thức ,Khoa học</div>
+                                        </a>
+                                    </li>
+                                    <li class="category_item">
+                                        <a href="">
+                                            <div class="category_item-icon"><i class="fa-solid fa-book-open"></i></div>
+                                            <div class="category_item-text">Truyện tranh</div>
+                                        </a>
+                                    </li>
+                                    <li class="category_item">
+                                        <a href="">
+                                            <div class="category_item-icon"><i class="fa-solid fa-book-open"></i></div>
+                                            <div class="category_item-text">manga, Comic</div>
+                                        </a>
+                                    </li>
+                                    <li class="category_item">
+                                        <a href="">
+                                            <div class="category_item-icon"><i class="fa-solid fa-book-open"></i></div>
+                                            <div class="category_item-text">Wings books</div>
+                                        </a>
+                                    </li>
+                                    <li class="category_item">
+                                        <a href="">
+                                            <div class="category_item-icon"><i class="fa-solid fa-book-open"></i></div>
+                                            <div class="category_item-text">Giải mã bản thân</div>
+                                        </a>
+                                    </li>
+                                    <li class="category_item">
+                                        <a href="">
+                                            <div class="category_item-icon"><i class="fa-solid fa-book-open"></i></div>
+                                            <div class="category_item-text">Dành cho cha mẹ</div>
+                                        </a>
+                                    </li>
+                                    <li class="category_item category_item-age">
+                                        <a href="">
+                                            <div class="category_item-icon"><i class="fa-solid fa-book-open"></i></div>
+                                            <div class="category_item-text">Độ tuổi</div> 
+                                            <div class="category_item-icon-next"><i class="fa-solid fa-angle-right"></i></div>                                                                       
+                                        </a>
+                                    </li>
+                                    <div class="menu_age">
+                                        <ul class="age_list">
+                                            <li class="age_item">
+                                                <a href=""><div class="age_item-text">Nhà trẻ,Mẫu giáo (0 - 5 tuổi)</div></a>
+                                            </li>
+                                            <li class="age_item">
+                                                <a href=""><div class="age_item-text">Nhi đồng (6 - 10 tuổi)</div></a>
+                                            </li>
+                                            <li class="age_item">
+                                                <a href=""><div class="age_item-text">Thiếu niên (11 - 15 tuổi)</div></a>
+                                            </li>
+                                            <li class="age_item">
+                                                <a href=""><div class="age_item-text">Tuổi mới lớn (16 - 18 tuổi)</div></a>
+                                            </li>
+                                            <li class="age_item">
+                                                <a href=""> <div class="age_item-text">Tuổi trưởng thành (Trên 18 tuổi)</div></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </ul>
+                            </div>
+                            <li class="news">
+                                <div class="news_title">
+                                    <div class="news_title-text">Tin tức</div>
+                                    <div class="news_title-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                                </div>
+                            </li>
+                            <div class="news_menu">
+                                <ul class="news_menu-list">
+                                    <li class="news_menu-item"> <a href="">Hoạt động</a></li>
+                                    <li class="news_menu-item"> <a href="">Sự kiện</a></li>
+                                    <li class="news_menu-item"> <a href="">Điểm sách</a></li>
+                                    <li class="news_menu-item"> <a href="">Sách giả - Sách lậu</a></li>
+                                    <li class="news_menu-item"> <a href="">Lịch phát hành sách định kỳ</a></li>
+                                </ul>
+                            </div>
+                            <li class="introduce">
+                                <div class="introduce_title">
+                                    <div class="introduce_title-text">Công nghệ</div>
+                                    <div class="introduce_title-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                                </div>
+                            </li>
+                            <div class="introduce_menu">
+                                <ul class="introduce_menu-list">
+                                    <li class="introduce_menu-item"> <a href=""> Giới thiệu nhà xuất bản</a></li>
+                                    <li class="introduce_menu-item"> <a href="">Tác giả - Tác phẩm</a> </li>
+                                    <li class="introduce_menu-item"> <a href="">Công tác xã hội</a> </li>
+                                    <li class="introduce_menu-item"> <a href="">Khen tưởng của Nhà nước</a> </li>
+                                    <li class="introduce_menu-item"> <a href="">Hợp tác quốc tế</a> </li>
+                                    <li class="introduce_menu-item"> <a href="">Hệ thống nhà sách</a> </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+         <!-- Hết Phần header cuối -->       
+    </div>
+     <!-- Hết phần header -->
+    <!-- Phần giữa -->
+    <div id="container">
+        <div class="wrapper">
+            <!-- Phần chọn và tiêu đề của sản phẩm -->
+            <div class="container_header">
+                <span class="link-index"><a href="">Trang chủ</a></span>
+                <span>/</span>
+                <span class="link-manga-comic"><a href="">Manga-Comic</a></span>
+                <span>/</span>
+                <span>Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (Tặng Kèm Bọc Bảo Vệ Sách)</span>
+            </div>
+            <!-- Phần giới thiệu thông tin chung của sách bao gồm tên, mã ,ảnh ... -->
+            <div class="content">
+                <div class="product_img-mini"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                <div class="product_img-big"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                <div class="product_infor_main">
+                    <h3 class="product_infor-title">CHÚ THUẬT HỒI CHIẾN - TẬP 17 - BẢN GIỚI HẠN (TẶNG KÈM BỌC BẢO VỆ
+                        SÁCH)</h3>
+                    <div class="evaluate-sold">
+                        <div class="evaluate">
+                            <ul class="list-star">
+                                <li class="item-star"><i class="fa-regular fa-star"></i></li>
+                                <li class="item-star"><i class="fa-regular fa-star"></i></li>
+                                <li class="item-star"><i class="fa-regular fa-star"></i></li>
+                                <li class="item-star"><i class="fa-regular fa-star"></i></li>
+                                <li class="item-star"><i class="fa-regular fa-star"></i></li>
+                            </ul>
+                            <div class="evaluate-quantity">0</div>
+                            <div class="evaluate-text">Đánh giá</div>
+                            <span>|</span>
+                        </div>
+                        <div class="sold">
+                            <div class="sold-text">Đã bán:</div>
+                            <div class="sold-quantity">23</div>
+                        </div>
+                    </div>
+                    <hr class="line">
+                    <div class="product_price">
+                        <div class="product_current-price">58,500đ</div>
+                        <div class="product_original-price">65,000đ</div>
+                        <div class="product_price-text">(Bạn đã tiết kiệm được 6,500₫)</div>
+                    </div>
+                    <hr class="line">
+                    <div class="product_infor">
+                        <ul class="product_infor-list">
+                            <li class="product_infor-item">Mã Kim Đồng:<b>5232215100017</b></li>
+                            <li class="product_infor-item">ISBN: <b> 978-604-2-33155-5</b></li>
+                            <li class="product_infor-item">Tác giả: <a href="">Gege Akutami</a></li>
+                            <li class="product_infor-item">Đối tượng: <a href="">Tuổi mới lớn (15 – 18)</a></li>
+                            <li class="product_infor-item">Khuôn Khổ: 11.3x17.6 cm</li>
+                            <li class="product_infor-item">Số trang: 200</li>
+                            <li class="product_infor-item">Định dạng: bìa mềm</li>
+                            <li class="product_infor-item">Trọng lượng: 140 gram</li>
+                            <li class="product_infor-item">Bộ sách: <a href="">Chú thuật hồi chiến</a></li>
+                        </ul>
+                        <div class="product_infor-quantity">
+                            <div class="product_infor-quantity-text">Số lượng</div>
+                            <div class="product_infor-quantity-plus-minus">
+                                <button class="product_infor-quantity-minus"><i class="fa-solid fa-minus"></i></button>
+                                <input id="product_quantity" type="number" value="1">
+                                <button class="product_infor-quantity-plus"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <button class="product_infor-quantity-actions">Đặt trước</button>
+                            <button class="product_infor-quantity-like"><i class="fa-solid fa-check"></i> Thích
+                                <span>1</span></button>
+                            <button class="product_infor-quantity-share">Chia sẻ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Hết Phần giới thiệu thông tin chung của sách bao gồm tên, mã ,ảnh ... -->
+
+             <!-- Phần xem thêm review và bình luận của khách -->
+            <div class="product_more-information">
+                <div class="product_more-information-left">
+                    <div class="product_description">
+                        <div class="product_description-header">
+                            <button class="review active">Mô tả - Đánh giá</button>
+                            <button class="comment">Bình luận</button>
+                        </div>
+                        <!-- PHần review -->
+                        <div class="review_main">
+                            <p class="content_review">
+                                Bị Okkotsu, kẻ thi hành án, đánh bại, đứng trước lằn ranh sự sống và cái chết,
+                                khung cảnh gia đình vào một ngày nào đó trong quá khứ bỗng ùa về trong tâm trí
+                                Itadori. Ở đó có hình dạng trước kia của Kamo Noritoshi. Trong lúc mọi người đang
+                                nhắm đến việc trấn áp “Tử Diệt Hồi Du”, nơi các thuật sư sát phạt nhau, Maki lại
+                                đến nhà Zen’in…!?
+                            </p>
+                            <p class="content_text">
+                                Sách Tặng Kèm Bọc Bảo Vệ Sách
+                            </p>
+                            <div class="img_review">
+                                <img src="./src/assets/img/chu-thuat-hoi-chien_ban-dac-biet_bia-tang-kem_tap-17.webp"
+                                    alt="">
+                            </div>
+                        </div>
+                        <!-- Phần bình luận -->
+                        <div class="comment_main d-none">
+                            <div class="comment_wrapper">
+                                <div class="comment_header">
+                                    <div class="comment_quantity">
+                                        <b><span>0</span><span>bình luận</span></b>
+                                    </div>
+                                    <div class="comment_filter">
+                                        <span>Sắp xếp theo</span>
+                                        <select name="comment_filter" id="">
+                                            <option value="">Mới nhất</option>
+                                            <option value="">Cũ nhất</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <hr class="line">
+                                <div class="player_comment">
+                                    <div class="player_comment-img"><img src="./src/assets/img/avata.jpeg" alt=""></div>
+                                    <div class="frame_write-comment">
+                                        <textarea class="player_comment-content" placeholder="Viết bình luận"></textarea>
+                                        <div class="post_comment"><button>Đăng</button></div>
+                                    </div>
+                                </div>
+                                <hr class="line">
+                                <div class="posted-on-facebook">
+                                    <div class="posted-on-facebook-icon"><i class="fa-brands fa-square-facebook"></i>
+                                    </div>
+                                    <a class="posted-on-facebook-link">Plugin bình luận trên Facebook</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hết bình luận -->
+                    <!-- Phần đánh giá sản phẩm -->
+                    <div class="products_review">
+                        <div class="products_review-wrapper">
+                            <div class="products_review-header">
+                                <h3 class="products_review-title">Đánh giá sản phẩm</h3>
+                                <div class="products_review-header-main">
+                                    <div class="products_review-header-left">
+                                        <div class="products_review-star">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div>Dựa trên 0 đánh giá</div>
+                                    </div>
+                                    <div class="products_review-header-right">
+                                        <a href="#" class="write-preview"><i class="fa-solid fa-comments"></i><span>Viết
+                                                đánh giá</span></a>
+                                        <a href="#" class="ask-question"><i
+                                                class="fa-regular fa-pen-to-square"></i><span>Đặt câu hỏi</span></a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <hr class="line">
+                            <div class="products_review-container">
+                                <!-- Form để viết phần đánh giá của bản thân -->
+                                <form action="" class=" form_write-preview d-none" id="form_write-preview ">
+                                    <div class="form_header">
+                                        <div>
+                                            <div class="form_header-text">Tên</div>
+                                            <input type="text" placeholder="Nhập tên của bạn">
+                                        </div>
+                                        <div>
+                                            <div class="form_header-text">Email</div>
+                                            <input type="text" placeholder="hi@example.com">
+                                        </div>
+                                        <div>
+                                            <div class="form_header-text">Số điện thoại</div>
+                                            <input type="text" placeholder="Nhập số điện thoai của bạn">
+                                        </div>
+                                    </div>
+                                    <div class="form_header-middle">
+                                        <div class="form_header-middle-text" for="">Đánh giá</div>
+                                        <div class="form_header-middle-star" for="">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="form_write-review-title">
+                                            <div for="">Tiêu đề đánh giá</div>
+                                            <input type="text" placeholder="Nhập tiêu đề đánh giá của bạn">
+                                        </div>
+                                        <div class="form_content">
+                                            <div for="">Nội dung</div>
+                                            <textarea name="" id="" cols="30" rows="7"
+                                                placeholder="Viết nội dung đánh giá của bạn"></textarea>
+                                        </div>
+                                        <div class="form_link-video">
+                                            <div for="">Link video (Không bắt buộc)</div>
+                                            <input type="text" placeholder="Nhập link youtube video của bạn">
+                                        </div>
+                                        <div class="form_img">
+                                            <label for="">Hình ảnh (không bắt buộc)</label>
+                                            <input type="file" id="file-input" name="file-input" />
+                                            <label id="file-input-label" for="file-input">Chọn hình</label>
+                                            <button>Gửi đánh giá</button>
+                                        </div>
+
+                                    </div>
+
+                                </form>
+                                <!-- Form để đặt câu hỏi của bản thân -->
+                                <form action="" class="form_ask-question d-none"  id="form_ask-question ">
+                                    <div class="form_header">
+                                        <div>
+                                            <div class="form_header-text">Tên</div>
+                                            <input type="text" placeholder="Nhập tên của bạn">
+                                        </div>
+                                        <div>
+                                            <div class="form_header-text">Email</div>
+                                            <input type="text" placeholder="hi@example.com">
+                                        </div>
+                                        <div>
+                                            <div class="form_header-text">Số điện thoại</div>
+                                            <input type="text" placeholder="Nhập số điện thoai của bạn">
+                                        </div>
+                                    </div>
+                                    <div class="form_content">
+                                        <div for="">Nội dung</div>
+                                        <textarea name="" id="" cols="30" rows="7"
+                                            placeholder="Viết nội dung đánh giá của bạn"></textarea>
+                                    </div>
+                                    <button class="form_ask-question-btn">Gửi đánh giá</button>
+                                </form>
+                                <div class="product_more-information-footer">
+                                    <span class="product_more-information-footer-review border_bottom">Đánh giá
+                                        <button>0</button></span>
+                                    <span class="product_more-information-footer-question">Câu hỏi và trả lời
+                                        <button>0</button></span>
+                                </div>
+                                <hr class="line">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Phần tác phẩm cùng tác giả với cuốn sách -->
+                <div class="product_more-information-right">
+                    <div class="related">
+                        <div class="related-title">Sách cùng tác giả</div>
+                        <div class="related-wrapper">
+                            <ul class="related-list">
+                                <div class="related-item">
+                                    <div class="related-item-img"><a href=""><img src="./src/assets/img/sp1.webp" alt=""></a></div>
+                                    <div class="related-item-name"> <a href="">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (Tặng
+                                        Kèm Bọc Bảo Vệ Sách)</a></div>
+                                    <div class="related-item-price">
+                                        <div class="replated_current-price">27,000đ</div>
+                                        <div class="replated_original-price">30,000đ</div>
+                                    </div>
+                                </div>
+                                <div class="related-item">
+                                    <div class="related-item-img"><a href=""><img src="./src/assets/img/sp1.webp" alt=""></a></div>
+                                    <div class="related-item-name"> <a href="">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (Tặng
+                                        Kèm Bọc Bảo Vệ Sách)</a></div>
+                                    <div class="related-item-price">
+                                        <div class="replated_current-price">27,000đ</div>
+                                        <div class="replated_original-price">30,000đ</div>
+                                    </div>
+                                </div>
+                                <div class="related-item">
+                                    <div class="related-item-img"><a href=""><img src="./src/assets/img/sp1.webp" alt=""></a></div>
+                                    <div class="related-item-name"> <a href="">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (Tặng
+                                        Kèm Bọc Bảo Vệ Sách)</a></div>
+                                    <div class="related-item-price">
+                                        <div class="replated_current-price">27,000đ</div>
+                                        <div class="replated_original-price">30,000đ</div>
+                                    </div>
+                                </div>
+                            </ul>
+                            <div class="related_see-more"><button class="">Xem thêm</button></div> 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+     <!-- Hết phần giữa -->
+   <!-- Phần slider giới thiệu thêm gồm 3 slider -->
+    <div id="related">
+        <div class="wrapper">
+            <!-- slider 1 -->
+            <div id="related_product-1">
+                <div class="related_product-header">
+                    <h2 class="related_product-header-title">SÁCH CÙNG THỂ LOẠI</h2>
+                </div>
+                <div class="related_product-list" id="related_product-list-1">
+                    <div class="related_product-wrap-item">
+                        <div class="related_product-item">
+                            <div class="related_product-item-img"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                            <div class="related_product-item-name">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (TẶNG KÈM BỌC BẢO VỆ SÁCH)</div>
+                            <div class="related_product-item-price">
+                                <span class="related_product-current-price">58,500đ</span>
+                                <span class="related_product-original-price">65,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="related_product-wrap-item">
+                        <div class="related_product-item">
+                            <div class="related_product-item-img"><img src="./src/assets/img/sp2.webp" alt=""></div>
+                            <div class="related_product-item-name">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (TẶNG KÈM BỌC BẢO VỆ SÁCH)</div>
+                            <div class="related_product-item-price">
+                                <span class="related_product-current-price">58,500đ</span>
+                                <span class="related_product-original-price">65,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="related_product-wrap-item">
+                        <div class="related_product-item">
+                            <div class="related_product-item-img"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                            <div class="related_product-item-name">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (TẶNG KÈM BỌC BẢO VỆ SÁCH)</div>
+                            <div class="related_product-item-price">
+                                <span class="related_product-current-price">58,500đ</span>
+                                <span class="related_product-original-price">65,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="related_product-wrap-item">
+                        <div class="related_product-item">
+                            <div class="related_product-item-img"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                            <div class="related_product-item-name">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (TẶNG KÈM BỌC BẢO VỆ SÁCH)</div>
+                            <div class="related_product-item-price">
+                                <span class="related_product-current-price">58,500đ</span>
+                                <span class="related_product-original-price">65,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="related_product-wrap-item">
+                        <div class="related_product-item">
+                            <div class="related_product-item-img"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                            <div class="related_product-item-name">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (TẶNG KÈM BỌC BẢO VỆ SÁCH)</div>
+                            <div class="related_product-item-price">
+                                <span class="related_product-current-price">58,500đ</span>
+                                <span class="related_product-original-price">65,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="related_product-wrap-item">
+                        <div class="related_product-item">
+                            <div class="related_product-item-img"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                            <div class="related_product-item-name">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (TẶNG KÈM BỌC BẢO VỆ SÁCH)</div>
+                            <div class="related_product-item-price">
+                                <span class="related_product-current-price">58,500đ</span>
+                                <span class="related_product-original-price">65,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="related_product-see-more">
+                    <a href=""> 
+                        <div class="related_product-see-more-text">Xem thêm</div>
+                        <div class="related_product-see-more-icon"><i class="fa-solid fa-angles-right"></i></div>
+                    </a>
+                </div>
+            </div>
+            <!-- slider 2 -->
+            <div id="related_product-2">
+                <div class="related_product-header">
+                    <h2 class="related_product-header-title">SÁCH CÙNG BỘ</h2>
+                </div>
+                <div class="related_product-list" id="related_product-list-2">
+                    <div class="related_product-wrap-item">
+                        <div class="related_product-item">
+                            <div class="related_product-item-img"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                            <div class="related_product-item-name">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (TẶNG KÈM BỌC BẢO VỆ SÁCH)</div>
+                            <div class="related_product-item-price">
+                                <span class="related_product-current-price">58,500đ</span>
+                                <span class="related_product-original-price">65,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="related_product-wrap-item">
+                        <div class="related_product-item">
+                            <div class="related_product-item-img"><img src="./src/assets/img/sp2.webp" alt=""></div>
+                            <div class="related_product-item-name">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (TẶNG KÈM BỌC BẢO VỆ SÁCH)</div>
+                            <div class="related_product-item-price">
+                                <span class="related_product-current-price">58,500đ</span>
+                                <span class="related_product-original-price">65,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="related_product-wrap-item">
+                        <div class="related_product-item">
+                            <div class="related_product-item-img"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                            <div class="related_product-item-name">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (TẶNG KÈM BỌC BẢO VỆ SÁCH)</div>
+                            <div class="related_product-item-price">
+                                <span class="related_product-current-price">58,500đ</span>
+                                <span class="related_product-original-price">65,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="related_product-wrap-item">
+                        <div class="related_product-item">
+                            <div class="related_product-item-img"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                            <div class="related_product-item-name">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (TẶNG KÈM BỌC BẢO VỆ SÁCH)</div>
+                            <div class="related_product-item-price">
+                                <span class="related_product-current-price">58,500đ</span>
+                                <span class="related_product-original-price">65,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="related_product-wrap-item">
+                        <div class="related_product-item">
+                            <div class="related_product-item-img"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                            <div class="related_product-item-name">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (TẶNG KÈM BỌC BẢO VỆ SÁCH)</div>
+                            <div class="related_product-item-price">
+                                <span class="related_product-current-price">58,500đ</span>
+                                <span class="related_product-original-price">65,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="related_product-wrap-item">
+                        <div class="related_product-item">
+                            <div class="related_product-item-img"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                            <div class="related_product-item-name">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (TẶNG KÈM BỌC BẢO VỆ SÁCH)</div>
+                            <div class="related_product-item-price">
+                                <span class="related_product-current-price">58,500đ</span>
+                                <span class="related_product-original-price">65,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="related_product-see-more">
+                    <a href=""> 
+                        <div class="related_product-see-more-text">Xem thêm</div>
+                        <div class="related_product-see-more-icon"><i class="fa-solid fa-angles-right"></i></div>
+                    </a>
+                </div>
+            </div>
+            <!-- slider 3 phần sách đã xem -->
+            <div id="seen_product">
+                <div class="related_product-header">
+                    <h2 class="related_product-header-title">Sản phẩm đã xem</h2>
+                </div>
+                <div class="related_product-list" id="seen_product-list">
+                    <div class="seen_product-wrap-item">
+                        <div class="seen_product-item">
+                            <div class="seen_product-item-img"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                            <div class="seen_product-item-name">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (TẶNG KÈM BỌC BẢO VỆ SÁCH)</div>
+                            <div class="seen_product-item-price">
+                                <span class="seen_product-current-price">58,500đ</span>
+                                <span class="seen_product-original-price">65,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seen_product-wrap-item">
+                        <div class="seen_product-item">
+                            <div class="seen_product-item-img"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                            <div class="seen_product-item-name">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (TẶNG KÈM BỌC BẢO VỆ SÁCH)</div>
+                            <div class="seen_product-item-price">
+                                <span class="seen_product-current-price">58,500đ</span>
+                                <span class="seen_product-original-price">65,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seen_product-wrap-item">
+                        <div class="seen_product-item">
+                            <div class="seen_product-item-img"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                            <div class="seen_product-item-name">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (TẶNG KÈM BỌC BẢO VỆ SÁCH)</div>
+                            <div class="seen_product-item-price">
+                                <span class="seen_product-current-price">58,500đ</span>
+                                <span class="seen_product-original-price">65,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seen_product-wrap-item">
+                        <div class="seen_product-item">
+                            <div class="seen_product-item-img"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                            <div class="seen_product-item-name">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (TẶNG KÈM BỌC BẢO VỆ SÁCH)</div>
+                            <div class="seen_product-item-price">
+                                <span class="seen_product-current-price">58,500đ</span>
+                                <span class="seen_product-original-price">65,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seen_product-wrap-item">
+                        <div class="seen_product-item">
+                            <div class="seen_product-item-img"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                            <div class="seen_product-item-name">Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (TẶNG KÈM BỌC BẢO VỆ SÁCH)</div>
+                            <div class="seen_product-item-price">
+                                <span class="seen_product-current-price">58,500đ</span>
+                                <span class="seen_product-original-price">65,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="related_product-see-more">
+                    <a href=""> 
+                        <div class="related_product-see-more-text">Xem thêm</div>
+                        <div class="related_product-see-more-icon"><i class="fa-solid fa-angles-right"></i></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="line">
+     <!-- Phần footer -->
+    <div id="footer">
+        <div class="wrapper">
+            <div class="footer_main">
+                <div class="footer_row1">
+                    <div class="footer_column">
+                        <div class="footer_column-title">Dịch vụ</div>
+                        <ul class="footer_column-list">
+                            <li class="footer_column-item"> <a href="">Điều khoản sử dụng</a> </li>
+                            <li class="footer_column-item"> <a href="">Chính sách bảo mật</a> </li>
+                            <li class="footer_column-item"> <a href="">Liên hệ</a> </li>
+                            <li class="footer_column-item"> <a href="">Hệ thống nhà sách</a> </li>
+                            <li class="footer_column-item"> <a href="">Tra cứu đơn hàng</a> </li>
+                        </ul>
+                    </div>
+                    <div class="footer_column">
+                        <div class="footer_column-title"> HỖ TRỢ</div>
+                        <ul class="footer_column-list">
+                            <li class="footer_column-item"> <a href="">Hướng dẫn đặt hàng</a> </li>
+                            <li class="footer_column-item"> <a href="">Chính sách đổi trả - hoàn tiền</a> </li>
+                            <li class="footer_column-item"> <a href="">Phương thức vận chuyển</a> </li>
+                            <li class="footer_column-item"> <a href="">Phương thức thanh toán</a> </li>
+                            <li class="footer_column-item"> <a href="">Chính sách khách hàng mua sỉ</a> </li>
+                            <li class="footer_column-item"> <a href="">Chính sách khách hàng cho trường học</a> </li>
+                        </ul>
+                    </div>
+                    <div class="footer_column">
+                        <div class="footer_column-title">NHÀ XUẤT BẢN KIM ĐỒNG</div>
+                        <ul class="footer_column-list">
+                            <li class="footer_column-item"> Giám đốc: Bùi Tuấn Nghĩa </li>
+                            <li class="footer_column-item"> Địa chỉ: Số 55 Quang Trung, Nguyễn Du, Hai Bà Trưng, Hà Nội
+                            </li>
+                            <li class="footer_column-item"> Số điện thoại:<a href=""> (+84) 1900571595</a> </li>
+                            <li class="footer_column-item"> <a href="">Email: cskh_online@nxbkimdong.com.vn</a> </li>
+                        </ul>
+                    </div>
+                    <div class="footer_column">
+                        <div class="footer_column-title">KẾT NỐI MẠNG XÃ HỘI</div>
+                        <ul class="footer_column-list">
+                            <li class="footer_column-item">
+                                <a href="">
+                                    <div class="footer_column-item-icon-1"><i class="fa-brands fa-facebook-f"></i></div>
+                                </a>
+                                <a href="">
+                                    <div class="footer_column-item-icon-2"><i class="fa-brands fa-youtube"></i></div>
+                                </a>
+                                <a href="">
+                                    <div class="footer_column-item-icon-3"><i class="fa-brands fa-instagram"></i></div>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_row2">
+                    <div class="footer_column">
+                        <div class="footer_column-title">GIẤY PHÉP KINH DOANH</div>
+                        <ul class="footer_column-list">
+                            <li class="footer_column-item"> <a href="">Giấy phép số: L 517/GP-BTTTT ngày 6/10/2015 của
+                                    Bộ Thông tin và Truyền thông</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_column">
+                        <div class="footer_column-title"></div>
+                        <ul class="footer_column-list">
+                            <li class="footer_column-item"> <a href=""><img src="./src/assets/img/BCT.webp" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_column">
+                        <div class="footer_column-title">ĐĂNG KÝ NHẬN TIN</div>
+                        <ul class="footer_column-list">
+                            <li class="footer_column-item"> <a href="">
+                                    Hãy nhập địa chỉ email của bạn vào ô dưới đây để có thể nhận được tất cả các tin tức
+                                    mới nhất của NXB Kim Đồng về các sản phẩm mới, các chương trình khuyến mãi mới.
+                                    NXB Kim Đồng xin đảm bảo sẽ không gửi mail rác, mail spam tới bạn.
+                                </a>
+                            </li>
+                            <li class="footer_column-item">
+                                <input class="footer_column-item-input" placeholder="Nhập Email của bạn"></input>
+                                <button class="footer_column-item-submit">Đăng ký</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            COPYRIGHTS © 2021 BY <a href="">NXB KIM ĐỒNG</a>. <a href="">POWERED BY HARAVAN</a>
+        </div>
+    </div> <!-- Hết phần footer -->
+    <!-- Phần btn để click vào sẽ về đầu trang -->
+    <div id="backtop"><i class="fa-solid fa-chevron-up"></i></div>
+    <!-- Phần form đăng ký đăng nhập -->
+    <div class="d-none" id="form_container">
+        <!-- form đăng ký -->
+        <form action="" class="form" id="form_register">
+            <div class="form_left">
+                <h4 class="title">Xin chào</h4>
+                <p> <span id="link_singin">Đăng nhập</span> hoặc <span>Tạo tài khoản</span></p>
+                <input type="text" id="name" placeholder="Họ tên" name="name">
+                <input type="number" id="phone" placeholder="Số điện thoại" name="phone">
+                <input type="text" id="email" placeholder="Email" name="email">
+                <input type="password" id="password" placeholder="Mật khẩu" name="password">
+                <label for="gender" id="gender">
+                    <label for="" class="gender_main">
+                        <input type="radio" name="gender" id="made" checked><label for=""
+                            style="margin-right: 5px;">Nam</label>
+                        <input type="radio" name="gender" id="femade"> <label for="">Nữ</label>
+                    </label>
+                </label>
+                <label for="" style="margin-bottom: 5px;">Ngày sinh</label>
+                <input type="date" name="" id="" placeholder="dd/mm/YYYY" name="date">
+                <label for="" class="checkbox_infor"><input type="checkbox" name="" id="checkbox" name="checkbox-infor">
+                    Nhận thông tin và chương trình khuyến mãi của NXB Kim đồng
+                    qua Email</label>
+                <button id="submit">Đăng ký</button>
+            </div>
+            <div class="form_right">
+                <div class="form_logo"><img src="./src/assets/img/logo.webp" alt=""></div>
+            </div>
+            <div class="close_form"><i class="fa-solid fa-xmark"></i></div>
+        </form>
+        <!-- Hết form đăng ký -->
+        <!-- form đăng nhập -->
+        <form action="" class="form" id="form_singin">
+            <div class="form_left">
+                <h4 class="title">Xin chào</h4>
+                <p> <span>Đăng nhập</span> hoặc <span id="link_register">Tạo tài khoản</span></p>
+                <input type="text" id="email" placeholder="Email" name="email">
+                <input type="password" id="password" placeholder="Mật khẩu" name="password">
+                <button id="submit">Đăng nhập</button>
+                <div class="social">
+                    <button class="social_google">Google</button>
+                    <button class="social_facebook">Facebook</button>
+                </div>
+            </div>
+            <div class="form_right">
+                <div class="form_logo"><img src="./src/assets/img/logo.webp" alt=""></div>
+            </div>
+            <div class="close_form"><i class="fa-solid fa-xmark"></i></div>
+        </form>
+    </div>
+    <div class="overlay d-none"></div>
+   
+</body>
+<!-- import slick slider -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+<script src="./src/assets/js/index.js"></script>
+<script src="./src/assets/js/chitietsanpham.js"></script>
+
+</html>
