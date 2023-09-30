@@ -274,6 +274,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .container_right-title {
@@ -297,17 +298,19 @@
 
     .container_right-content {
         margin-top: 35px;
+        width: 100%;
     }
 
     .product-list {
+        width: 100%;
         display: grid;
-        grid-template-columns: repeat(4, 200px); 
+        grid-template-columns: repeat(4, 1fr); 
         grid-gap: 15px; 
         grid-auto-rows: auto;
     }
 
     .product-item {
-        width: 200px;
+        width: 100%;
         margin-right: 30px;
     }
 
@@ -322,6 +325,7 @@
     }
     
     .item-img {
+        
         padding: 5px;
     }
     

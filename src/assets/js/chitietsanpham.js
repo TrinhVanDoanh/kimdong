@@ -117,3 +117,4 @@ $('.product_infor-quantity-minus').click(function() {
 $('.product_infor-quantity-plus').click(function() {
   $('#product_quantity').val( parseInt( $('#product_quantity').val()) + 1 ); ;
 });
+
