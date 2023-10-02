@@ -179,7 +179,7 @@
     height: 25px;
     padding: 5px 15px 5px 15px;
     border: solid 1px #bebebe;
-    width: 265px;
+    width: calc(100% - 25px);
     outline: none;
 }
 .search_smart {
@@ -194,7 +194,6 @@
     min-width: 214px;
     position: absolute;
     z-index: 10;
-    display: none;
 }
 
 .search_smart-title {

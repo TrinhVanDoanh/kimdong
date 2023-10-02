@@ -163,6 +163,22 @@ $(document).ready(function(){
   });
 
 
+  // Tìm kiếm
+  $(document).ready(function(){
+    console.log($('.search-input'));
+
+    $('.search-input').keydown(function(e){
+        var inputValue = $(this).val();
+        if(inputValue) {
+            $('.search_smart').css('display','block')
+        }
+        else {
+            $('.search_smart').css('display','none')
+        }
+    });
+ 
+});
+
 
 
 

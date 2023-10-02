@@ -33,11 +33,13 @@
     font-weight: bold;
     margin-top: 30px ;
 }
-
+.search_content-main {
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}
 .search-product-wrap {
-    width: 25%;
+    width: 100%;
     margin-top: 20px;
-    float: left;
 }
 
 .search-product {
