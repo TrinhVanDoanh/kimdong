@@ -10,10 +10,55 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./src/assets/css/chitietsanpham.css">
     <link rel="stylesheet" href="./src/assets/css/main.css">
+    <link rel="stylesheet" href="./src/assets/css/responsive.css">
     <title>Chi tiết sản phẩm</title>
 </head>
 
 <body>
+    <!-- Phần header responsive -->
+    <div class="header_mobile">
+        <div class="header_mobile-wrap">
+            <div class="header_mobile-main">
+                <div class="header_mobile-logo">
+                    <img src="./src/assets/img/logo.webp" alt="">
+                </div>
+                <div class="header_mobile-right">
+                    <span class="header_mobile-user"><i class="fa-solid fa-user"></i></span>
+                    <span class="header_mobile-cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                    <span>Menu</span>
+                    <span class="header_mobile-menu"><i class="fa-solid fa-bars"></i></i></span>
+                </div>
+            </div>
+            <div class="header_mobile-overlay"></div>
+            <div class="header_mobile-menu-main">
+                <div class="header_mobile-menu-wrap">
+                    <div class="header_mobile-menu-close">
+                        <span>Đóng</span>
+                        <span><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <div class="header_mobile-menu-search">
+                        <div class="header_mobile-menu-search-main">
+                            <input type="text" placeholder="Tìm kiếm">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <ul class="header_mobile-menu-list">
+                        <li class="header_mobile-menu-item"> <a href=""> Tất cả sản phẩm </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Lịch sử ,truyền thống </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Văn học việt nam </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Văn học nước ngoài </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Kiến thức, khoa học </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Truyện tranh </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Manga - Comic </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Wings book </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Giải mã bản thân </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Dành cho cha mẹ </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Độ tuổi </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+   </div>
       <!-- Phần header -->
     <div id="header">
         <!-- Phần header top -->
@@ -265,7 +310,8 @@
     <!-- Phần giữa -->
     <div id="container">
         <div class="wrapper">
-            <!-- Phần chọn và tiêu đề của sản phẩm -->
+            <div class="mobile_wrap">
+                <!-- Phần chọn và tiêu đề của sản phẩm -->
             <div class="container_header">
                 <span class="link-index"><a href="">Trang chủ</a></span>
                 <span>/</span>
@@ -274,64 +320,68 @@
                 <span>Chú Thuật Hồi Chiến - Tập 17 - Bản giới hạn (Tặng Kèm Bọc Bảo Vệ Sách)</span>
             </div>
             <!-- Phần giới thiệu thông tin chung của sách bao gồm tên, mã ,ảnh ... -->
-            <div class="content">
-                <div class="product_img-mini"><img src="./src/assets/img/sp1.webp" alt=""></div>
-                <div class="product_img-big"><img src="./src/assets/img/sp1.webp" alt=""></div>
-                <div class="product_infor_main">
-                    <h3 class="product_infor-title">CHÚ THUẬT HỒI CHIẾN - TẬP 17 - BẢN GIỚI HẠN (TẶNG KÈM BỌC BẢO VỆ
-                        SÁCH)</h3>
-                    <div class="evaluate-sold">
-                        <div class="evaluate">
-                            <ul class="list-star">
-                                <li class="item-star"><i class="fa-regular fa-star"></i></li>
-                                <li class="item-star"><i class="fa-regular fa-star"></i></li>
-                                <li class="item-star"><i class="fa-regular fa-star"></i></li>
-                                <li class="item-star"><i class="fa-regular fa-star"></i></li>
-                                <li class="item-star"><i class="fa-regular fa-star"></i></li>
-                            </ul>
-                            <div class="evaluate-quantity">0</div>
-                            <div class="evaluate-text">Đánh giá</div>
-                            <span>|</span>
-                        </div>
-                        <div class="sold">
-                            <div class="sold-text">Đã bán:</div>
-                            <div class="sold-quantity">23</div>
-                        </div>
-                    </div>
-                    <hr class="line">
-                    <div class="product_price">
-                        <div class="product_current-price">58,500đ</div>
-                        <div class="product_original-price">65,000đ</div>
-                        <div class="product_price-text">(Bạn đã tiết kiệm được 6,500₫)</div>
-                    </div>
-                    <hr class="line">
-                    <div class="product_infor">
-                        <ul class="product_infor-list">
-                            <li class="product_infor-item">Mã Kim Đồng:<b>5232215100017</b></li>
-                            <li class="product_infor-item">ISBN: <b> 978-604-2-33155-5</b></li>
-                            <li class="product_infor-item">Tác giả: <a href="">Gege Akutami</a></li>
-                            <li class="product_infor-item">Đối tượng: <a href="">Tuổi mới lớn (15 – 18)</a></li>
-                            <li class="product_infor-item">Khuôn Khổ: 11.3x17.6 cm</li>
-                            <li class="product_infor-item">Số trang: 200</li>
-                            <li class="product_infor-item">Định dạng: bìa mềm</li>
-                            <li class="product_infor-item">Trọng lượng: 140 gram</li>
-                            <li class="product_infor-item">Bộ sách: <a href="">Chú thuật hồi chiến</a></li>
-                        </ul>
-                        <div class="product_infor-quantity">
-                            <div class="product_infor-quantity-text">Số lượng</div>
-                            <div class="product_infor-quantity-plus-minus">
-                                <button class="product_infor-quantity-minus"><i class="fa-solid fa-minus"></i></button>
-                                <input id="product_quantity" type="number" value="1">
-                                <button class="product_infor-quantity-plus"><i class="fa-solid fa-plus"></i></button>
+            <form action="">
+                <div class="content">
+                    <div class="pc_product_img-mini"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                    <div class="product_img-big"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                    <div class="mobile_product_img-mini"><img src="./src/assets/img/sp1.webp" alt=""></div>
+                    <div class="product_infor_main">
+                        <h3 class="product_infor-title">CHÚ THUẬT HỒI CHIẾN - TẬP 17 - BẢN GIỚI HẠN (TẶNG KÈM BỌC BẢO VỆ
+                            SÁCH)</h3>
+                        <div class="evaluate-sold">
+                            <div class="evaluate">
+                                <ul class="list-star">
+                                    <li class="item-star"><i class="fa-regular fa-star"></i></li>
+                                    <li class="item-star"><i class="fa-regular fa-star"></i></li>
+                                    <li class="item-star"><i class="fa-regular fa-star"></i></li>
+                                    <li class="item-star"><i class="fa-regular fa-star"></i></li>
+                                    <li class="item-star"><i class="fa-regular fa-star"></i></li>
+                                </ul>
+                                <div class="evaluate-quantity">0</div>
+                                <div class="evaluate-text">Đánh giá</div>
+                                <span>|</span>
                             </div>
-                            <button class="product_infor-quantity-actions">Đặt trước</button>
-                            <button class="product_infor-quantity-like"><i class="fa-solid fa-check"></i> Thích
-                                <span>1</span></button>
-                            <button class="product_infor-quantity-share">Chia sẻ</button>
+                            <div class="sold">
+                                <div class="sold-text">Đã bán:</div>
+                                <div class="sold-quantity">23</div>
+                            </div>
+                        </div>
+                        <hr class="line">
+                        <div class="product_price">
+                            <div class="product_current-price">58,500đ</div>
+                            <div class="product_original-price">65,000đ</div>
+                            <div class="product_price-text">(Bạn đã tiết kiệm được 6,500₫)</div>
+                        </div>
+                        <hr class="line">
+                        <div class="product_infor">
+                            <ul class="product_infor-list">
+                                <li class="product_infor-item">Mã Kim Đồng:<b>5232215100017</b></li>
+                                <li class="product_infor-item">ISBN: <b> 978-604-2-33155-5</b></li>
+                                <li class="product_infor-item">Tác giả: <a href="">Gege Akutami</a></li>
+                                <li class="product_infor-item">Đối tượng: <a href="">Tuổi mới lớn (15 – 18)</a></li>
+                                <li class="product_infor-item">Khuôn Khổ: 11.3x17.6 cm</li>
+                                <li class="product_infor-item">Số trang: 200</li>
+                                <li class="product_infor-item">Định dạng: bìa mềm</li>
+                                <li class="product_infor-item">Trọng lượng: 140 gram</li>
+                                <li class="product_infor-item">Bộ sách: <a href="">Chú thuật hồi chiến</a></li>
+                            </ul>
+                            <div class="product_infor-quantity">
+                                <div class="product_infor-quantity-text">Số lượng</div>
+                                <div class="product_infor-quantity-plus-minus">
+                                    <button class="product_infor-quantity-minus"><i class="fa-solid fa-minus"></i></button>
+                                    <input id="product_quantity" type="number" value="1">
+                                    <button class="product_infor-quantity-plus"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                                <button class="product_infor-quantity-actions">Đặt trước</button>
+                                <button class="product_infor-quantity-like"><i class="fa-solid fa-check"></i> Thích
+                                    <span>1</span></button>
+                                <button class="product_infor-quantity-share">Chia sẻ</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
+            
              <!-- Hết Phần giới thiệu thông tin chung của sách bao gồm tên, mã ,ảnh ... -->
 
              <!-- Phần xem thêm review và bình luận của khách -->
@@ -540,12 +590,14 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+            </div>
+            
         </div>
     </div>
      <!-- Hết phần giữa -->
    <!-- Phần slider giới thiệu thêm gồm 3 slider -->
+   <div class="mobile_wrap">
     <div id="related">
         <div class="wrapper">
             <!-- slider 1 -->
@@ -764,9 +816,21 @@
             </div>
         </div>
     </div>
-    <hr class="line">
+   </div>
+    
      <!-- Phần footer -->
     <div id="footer">
+        <div class="mobile-footer_social-link">
+            <a href="" class="mobile-footer_social-item-icon-1">
+                <div><i class="fa-brands fa-facebook-f"></i></div>
+            </a>
+            <a href="" class="mobile-footer_social-item-icon-2">
+                <div ><i class="fa-brands fa-youtube"></i></div>
+            </a>
+            <a href="" class="mobile-footer_social-item-icon-3">
+                <div ><i class="fa-brands fa-instagram"></i></div>
+            </a>
+        </div>
         <div class="wrapper">
             <div class="footer_main">
                 <div class="footer_row1">
@@ -919,5 +983,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 <script src="./src/assets/js/index.js"></script>
 <script src="./src/assets/js/chitietsanpham.js"></script>
+<script src="./src/assets/js/responsive.js"></script>
 
 </html>

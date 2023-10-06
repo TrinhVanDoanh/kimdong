@@ -10,10 +10,55 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./src/assets/css/danhmucsanpham.css">
     <link rel="stylesheet" href="./src/assets/css/main.css">
+    <link rel="stylesheet" href="./src/assets/css/responsive.css">
     <title>Chi tiết sản phẩm</title>
 </head>
 
 <body>
+     <!-- Phần header responsive -->
+     <div class="header_mobile">
+        <div class="header_mobile-wrap">
+            <div class="header_mobile-main">
+                <div class="header_mobile-logo">
+                    <img src="./src/assets/img/logo.webp" alt="">
+                </div>
+                <div class="header_mobile-right">
+                    <span class="header_mobile-user"><i class="fa-solid fa-user"></i></span>
+                    <span class="header_mobile-cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                    <span>Menu</span>
+                    <span class="header_mobile-menu"><i class="fa-solid fa-bars"></i></i></span>
+                </div>
+            </div>
+            <div class="header_mobile-overlay"></div>
+            <div class="header_mobile-menu-main">
+                <div class="header_mobile-menu-wrap">
+                    <div class="header_mobile-menu-close">
+                        <span>Đóng</span>
+                        <span><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <div class="header_mobile-menu-search">
+                        <div class="header_mobile-menu-search-main">
+                            <input type="text" placeholder="Tìm kiếm">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <ul class="header_mobile-menu-list">
+                        <li class="header_mobile-menu-item"> <a href=""> Tất cả sản phẩm </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Lịch sử ,truyền thống </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Văn học việt nam </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Văn học nước ngoài </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Kiến thức, khoa học </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Truyện tranh </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Manga - Comic </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Wings book </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Giải mã bản thân </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Dành cho cha mẹ </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Độ tuổi </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+   </div>
     <!-- Phần header -->
     <div id="header">
         <!-- Phần header top -->
@@ -84,6 +129,28 @@
                                 <h3 class="view_cart-title">Giỏ hàng của tôi (3 sản phẩm) <span id="view_cart-close"><i
                                             class="fa-solid fa-xmark"></i></span> </h3>
                                 <ul class="view_cart-list">
+                                    <li class="view_cart-item">
+                                        <div class="view_cart-item-img"><img src="./src/assets/img/sp1.webp" alt="">
+                                        </div>
+                                        <div class="view_cart-item-content">
+                                            <div class="view_cart-item-name"><a href="">Chú Thuật Hồi Chiến - Tập 17 -
+                                                    Bản giới hạn (Tặng kèm bọc bảo vệ sách)</a></div>
+                                            <div class="view_cart-item-quantity">Số lượng: 1</div>
+                                            <div class="view_cart-item-price">Giá/sp: 39,000đ</div>
+                                        </div>
+                                        <div class="view_cart-item-icon"><i class="fa-solid fa-xmark"></i></div>
+                                    </li>
+                                    <li class="view_cart-item">
+                                        <div class="view_cart-item-img"><img src="./src/assets/img/sp1.webp" alt="">
+                                        </div>
+                                        <div class="view_cart-item-content">
+                                            <div class="view_cart-item-name"><a href="">Chú Thuật Hồi Chiến - Tập 17 -
+                                                    Bản giới hạn (Tặng kèm bọc bảo vệ sách)</a></div>
+                                            <div class="view_cart-item-quantity">Số lượng: 1</div>
+                                            <div class="view_cart-item-price">Giá/sp: 39,000đ</div>
+                                        </div>
+                                        <div class="view_cart-item-icon"><i class="fa-solid fa-xmark"></i></div>
+                                    </li>
                                     <li class="view_cart-item">
                                         <div class="view_cart-item-img"><img src="./src/assets/img/sp1.webp" alt="">
                                         </div>
@@ -538,8 +605,6 @@
                                 <span class="prevpage"> <a href=""><i class="fa-solid fa-angles-left"></i></a></span>
                                 <span class="page"> <a href="">1</a></span>
                                 <span class="page page-active"> <a href="">2</a></span>
-                                <span class="page"> <a href="">3</a></span>
-                                <span class="page"> <a href="">4</a></span>
                                 <span class="page">...</span>
                                 <span class="page"> <a href="">11</a></span>
                                 <span class="nextpage"> <a href=""><i class="fa-solid fa-angles-right"></i></a></span>
@@ -551,9 +616,19 @@
         </div>
     </div>
     <!-- Hết phần giữa -->
-    <hr class="line">
     <!-- Phần footer -->
     <div id="footer">
+        <div class="mobile-footer_social-link">
+            <a href="" class="mobile-footer_social-item-icon-1">
+                <div><i class="fa-brands fa-facebook-f"></i></div>
+            </a>
+            <a href="" class="mobile-footer_social-item-icon-2">
+                <div ><i class="fa-brands fa-youtube"></i></div>
+            </a>
+            <a href="" class="mobile-footer_social-item-icon-3">
+                <div ><i class="fa-brands fa-instagram"></i></div>
+            </a>
+        </div>
         <div class="wrapper">
             <div class="footer_main">
                 <div class="footer_row1">
@@ -706,5 +781,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 <script src="./src/assets/js/index.js"></script>
 <script src="./src/assets/js/danhmucsanpham.js"></script>
+<script src="./src/assets/js/responsive.js"></script>
 
 </html>

@@ -26,15 +26,23 @@
 
 }
 
-.product_img-mini {
+.pc_product_img-mini {
     width: 75px;
 }
 
-.product_img-mini img {
+.pc_product_img-mini img {
     width: 100%;
     object-fit: cover;
 }
 
+.mobile_product_img-mini {
+    width: 30%;
+    display: none;
+}
+.mobile_product_img-mini img {
+    width: 100%;
+    object-fit: cover;
+}
 .product_img-big {
     width: 364px;
 }
@@ -944,4 +952,10 @@
 
   .active {
     background-color: #d51c24 !important;
+  }
+
+  /* respomsive */
+
+  .mobile_wrap {
+    margin: 0px;
   }

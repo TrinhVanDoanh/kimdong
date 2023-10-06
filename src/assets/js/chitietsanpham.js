@@ -12,6 +12,20 @@ $(document).ready(function(){
       // <div class="banner_slider-icon"></div>
       prevArrow: `<button type='button' class='slick-prev '><i class=" banner_slider-icon-prev fa-solid fa-chevron-left"></i></button>`,
       nextArrow: `<button type='button' class='slick-next slick-arrow'><i class=" banner_slider-icon-next fa-solid fa-chevron-right"></i></button>`,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 650,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+      ]
     });
   });
 
@@ -27,6 +41,20 @@ $(document).ready(function(){
       // <div class="banner_slider-icon"></div>
       prevArrow: `<button type='button' class='slick-prev '><i class=" banner_slider-icon-prev fa-solid fa-chevron-left"></i></button>`,
       nextArrow: `<button type='button' class='slick-next slick-arrow'><i class=" banner_slider-icon-next fa-solid fa-chevron-right"></i></button>`,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 650,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+      ]
     });
   });
 
@@ -42,6 +70,20 @@ $(document).ready(function(){
       // <div class="banner_slider-icon"></div>
       prevArrow: `<button type='button' class='slick-prev '><i class=" banner_slider-icon-prev fa-solid fa-chevron-left"></i></button>`,
       nextArrow: `<button type='button' class='slick-next slick-arrow'><i class=" banner_slider-icon-next fa-solid fa-chevron-right"></i></button>`,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 650,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+      ]
     });
   });
 // Hết slider

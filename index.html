@@ -10,13 +10,59 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./src/assets/css/index.css">
     <link rel="stylesheet" href="./src/assets/css/main.css">
+    <link rel="stylesheet" href="./src/assets/css/responsive.css">
     <title>index</title>
 </head>
 
 <body>
+    <!-- Phần header responsive -->
+    <div class="header_mobile">
+        <div class="header_mobile-wrap">
+            <div class="header_mobile-main">
+                <div class="header_mobile-logo">
+                    <img src="./src/assets/img/logo.webp" alt="">
+                </div>
+                <div class="header_mobile-right">
+                    <span class="header_mobile-user"><i class="fa-solid fa-user"></i></span>
+                    <span class="header_mobile-cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                    <span>Menu</span>
+                    <span class="header_mobile-menu"><i class="fa-solid fa-bars"></i></i></span>
+                </div>
+            </div>
+            <div class="header_mobile-overlay"></div>
+            <div class="header_mobile-menu-main">
+                <div class="header_mobile-menu-wrap">
+                    <div class="header_mobile-menu-close">
+                        <span>Đóng</span>
+                        <span><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <div class="header_mobile-menu-search">
+                        <div class="header_mobile-menu-search-main">
+                            <input type="text" placeholder="Tìm kiếm">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <ul class="header_mobile-menu-list">
+                        <li class="header_mobile-menu-item"> <a href=""> Tất cả sản phẩm </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Lịch sử ,truyền thống </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Văn học việt nam </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Văn học nước ngoài </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Kiến thức, khoa học </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Truyện tranh </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Manga - Comic </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Wings book </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Giải mã bản thân </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Dành cho cha mẹ </a></li>
+                        <li class="header_mobile-menu-item"> <a href=""> Độ tuổi </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+   </div>
     <!-- Phần header -->
     <div id="header">
-        <!-- Phần header top -->
+        <div class="header_pc">
+             <!-- Phần header top -->
         <div class="header_top">
             <div class="wrapper">
                 <div class="header_top-main">
@@ -68,19 +114,8 @@
                                         <a href="">Xem thêm(30)</a>
                                     </div>
                                     <div class="search_smart-product ">
-                                        <div class="search_smart-product-wrap">
-                                            <a href="">
-                                                <div class="search_smart-product-img"><a href=""><img src="./src/assets/img/search_sp1.webp" alt=""></a></div>
-                                                <div class="search_smart-product-infor">
-                                                    <div class="search_smart-product-name"><a href="">Chú thuật hồi chiến - Tập 1</a></div>
-                                                    <div class="search_smart-product-price">
-                                                        <div class="search_smart-product-current-price">25,500đ</div>
-                                                        <div class="search_smart-product-original-price">30,000đ</div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
                                     </div>
+                                    
                                     <div class="search_smart-footer ">
                                         <p>Không có tin tức nào cho: <span>Chú thuật hồi chiến </span></p>
                                     </div>
@@ -320,6 +355,8 @@
             </div>
         </div>
         <!-- Hết Phần header cuối -->
+        </div>
+       
     </div>
     <!-- Hết phần header -->
     <!-- Phần giữa -->
@@ -872,11 +909,21 @@
                 </div>
             </div>
         </div>
-        <hr class="line">
     </div>
     <!-- Hết phần giữa -->
     <!-- Phần footer -->
     <div id="footer">
+        <div class="mobile-footer_social-link">
+                    <a href="" class="mobile-footer_social-item-icon-1">
+                        <div><i class="fa-brands fa-facebook-f"></i></div>
+                    </a>
+                    <a href="" class="mobile-footer_social-item-icon-2">
+                        <div ><i class="fa-brands fa-youtube"></i></div>
+                    </a>
+                    <a href="" class="mobile-footer_social-item-icon-3">
+                        <div ><i class="fa-brands fa-instagram"></i></div>
+                    </a>
+        </div>
         <div class="wrapper">
             <div class="footer_main">
                 <div class="footer_row1">
@@ -911,7 +958,7 @@
                             <li class="footer_column-item"> <a href="">Email: cskh_online@nxbkimdong.com.vn</a> </li>
                         </ul>
                     </div>
-                    <div class="footer_column">
+                    <div class="footer_column footer_social-link">
                         <div class="footer_column-title">KẾT NỐI MẠNG XÃ HỘI</div>
                         <ul class="footer_column-list">
                             <li class="footer_column-item">
@@ -1029,5 +1076,6 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 <script src="./src/assets/js/index.js"></script>
+<script src="./src/assets/js/responsive.js"></script>
 
 </html>

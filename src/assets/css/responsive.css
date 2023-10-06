@@ -1,0 +1,152 @@
+@media  (max-width: 600px) { 
+    .header_top,
+    .header_middle,
+    .menu {
+        display: none;
+    }
+
+    .header_mobile {
+        display: block;
+    }
+    .footer_row1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0px 15px;
+    }
+    .footer_column-item-input {
+        width: 67%;
+    }
+    .footer_row2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0px 15px;
+    }
+    .footer_social-link {
+        display: none;
+    }
+    .mobile-footer_social-link {
+        display:flex ;
+    }
+    /* Phần chi tiết sản phẩm */
+    .mobile_wrap {
+        margin: 20px;
+        display: block;
+      }
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+      .product_img-big {
+        width: 100%;
+    }
+    
+    .product_img-big img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .pc_product_img-mini {
+        display: none;
+    }
+
+    .mobile_product_img-mini {
+        display: block;
+    }
+    .product_infor {
+        margin-top: 10px;
+        display: block;
+    }
+    .product_more-information {
+        display: block;
+    }
+    .product_infor_main {
+        margin-left: 0px;
+    }
+
+    .product_more-information-left {
+        width: 100%;
+    }
+
+    .img_review {
+        width: 91%;
+        padding:0px;
+        margin: 15px;
+    }
+
+    .img_review img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+   .products_review-header-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0px;
+        flex-direction: column;
+   }
+
+   .products_review-header-right {
+    margin: 20px 0px;
+   }
+
+   .form_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+   }
+
+   .form_img button {
+        margin-top: 15px;
+   }
+
+   .product_more-information-right {
+    margin-top: 20px;
+   }
+
+   /* responsive phần danh mục sản phẩm */
+   .container-main {
+    display: flex;
+    flex-direction: column-reverse;
+   }
+
+   .title_page-content {
+    padding-left: 20px;
+   }
+   
+
+   .container_right {
+    width: 100%;
+    padding: 15px;
+    margin: 0px;
+}
+
+   .container_right-header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+
+    .container_right-filter-main {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .product-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product-item {
+        width:  45% ;
+    }
+
+    .container_left {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+}
